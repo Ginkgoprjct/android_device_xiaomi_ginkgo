@@ -30,5 +30,5 @@
     <dimen name="status_bar_padding_end">9dp</dimen>
 
     <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">2dp</dimen
+    <dimen name="status_bar_padding_top">2dp</dimen>
 </resources>
