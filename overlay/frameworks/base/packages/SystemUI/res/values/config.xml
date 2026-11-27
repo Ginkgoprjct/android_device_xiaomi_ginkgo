@@ -28,4 +28,6 @@
     <bool name="config_turbulenceNoise">false</bool>
     <!-- Disable bluetooth by default -->
     <bool name="def_bluetooth_on">false</bool>
+    <!-- Whether usage of the proximity sensor during doze is supported -->
+    <bool name="doze_proximity_sensor_supported">false</bool>
 </resources>
