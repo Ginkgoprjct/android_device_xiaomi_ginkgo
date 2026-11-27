@@ -15,14 +15,17 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
 # Enable UI enhancements
-TARGET_ENABLE_BLUR := false
+TARGET_ENABLE_BLUR := true
 PERF_ANIM_OVERRIDE := true
 
 # Enable features
 TARGET_SUPPORTS_QUICK_TAP := true
 BYPASS_CHARGE_SUPPORTED := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-USE_PIXEL_CHARGING := true
+USE_PIXEL_CHARGING := false
+
+# Dolby
+$(call inherit-product-if-exists, hardware/dolby/dolby.mk)
 
 PRODUCT_NAME := lineage_ginkgo
 PRODUCT_DEVICE := ginkgo
